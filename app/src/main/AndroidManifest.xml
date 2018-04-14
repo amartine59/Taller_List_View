@@ -19,14 +19,8 @@
         <activity android:name=".Area" />
         <activity android:name=".Volumen" />
         <activity android:name=".HistorialOperaciones" />
-        <activity android:name=".Cuadrado" />
-        <activity android:name=".Rectangulo" />
-        <activity android:name=".Triangulo" />
-        <activity android:name=".Circulo" />
-        <activity android:name=".Esfera" />
-        <activity android:name=".Cilindro" />
-        <activity android:name=".Cono" />
-        <activity android:name=".Cubo"></activity>
+        <activity android:name=".CalculoA" />
+        <activity android:name=".CalculoV"></activity>
     </application>
 
 </manifest>

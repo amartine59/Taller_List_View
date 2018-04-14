@@ -27,19 +27,19 @@ public class Area extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 switch (i){
                     case 0:
-                        in_area = new Intent(Area.this,Cuadrado.class);
+                        in_area = new Intent(Area.this,CalculoA.class);
                         startActivity(in_area);
                         break;
                     case 1:
-                        in_area = new Intent(Area.this,Rectangulo.class);
+                        in_area = new Intent(Area.this,CalculoA.class);
                         startActivity(in_area);
                         break;
                     case 2:
-                        in_area = new Intent(Area.this,Triangulo.class);
+                        in_area = new Intent(Area.this,CalculoA.class);
                         startActivity(in_area);
                         break;
                     case 3:
-                        in_area = new Intent(Area.this,Circulo.class);
+                        in_area = new Intent(Area.this,CalculoA.class);
                         startActivity(in_area);
                         break;
 

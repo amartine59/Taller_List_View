@@ -27,19 +27,19 @@ public class Volumen extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 switch (i){
                     case 0:
-                        in_volumen = new Intent(Volumen.this,Esfera.class);
+                        in_volumen = new Intent(Volumen.this,CalculoV.class);
                         startActivity(in_volumen);
                         break;
                     case 1:
-                        in_volumen = new Intent(Volumen.this,Cilindro.class);
+                        in_volumen = new Intent(Volumen.this,CalculoV.class);
                         startActivity(in_volumen);
                         break;
                     case 2:
-                        in_volumen = new Intent(Volumen.this,Cono.class);
+                        in_volumen = new Intent(Volumen.this,CalculoV.class);
                         startActivity(in_volumen);
                         break;
                     case 3:
-                        in_volumen = new Intent(Volumen.this,Cubo.class);
+                        in_volumen = new Intent(Volumen.this,CalculoV.class);
                         startActivity(in_volumen);
                         break;
                 }
