@@ -29,4 +29,8 @@
         <item>@string/cono</item>
         <item>@string/cubo</item>
     </string-array>
+    <string name="operacion">Operacion</string>
+    <string name="numero">No</string>
+    <string name="datos">Datos</string>
+    <string name="resultado">Resultado</string>
 </resources>
