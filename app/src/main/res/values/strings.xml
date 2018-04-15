@@ -33,4 +33,23 @@
     <string name="numero">No</string>
     <string name="datos">Datos</string>
     <string name="resultado">Resultado</string>
+    <string name="area_cuadrado">Área del cuadrado</string>
+    <string name="area_rectangulo">Área del rectángulo</string>
+    <string name="area_triangulo">Área del triángulo</string>
+    <string name="area_circulo">Área del círculo</string>
+    <string name="volumen_esfera">Volúmen de esfera</string>
+    <string name="volumen_cilindro">Volúmen del cilindro</string>
+    <string name="volumen_cono">Volúmen del cono</string>
+    <string name="volumen_cubo">Volúmen del cubo</string>
+    <string name="ac_placeholder">Ingrese valor del lado</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="ar_placeholder1">Ingrese base</string>
+    <string name="ar_placeholder2">Ingrese altura</string>
+    <string name="aci_placeholder">Ingrese radio del círculo</string>
+    <string name="ve_placeholder">Ingrese radio de la esfera</string>
+    <string name="vc_placeholder1">Ingrese radio</string>
+    <string name="vc_placeholder2">Ingrese altura </string>
+    <string name="vcu_placeholder">Ingrese valor de la arista</string>
+
 </resources>

@@ -6,29 +6,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".CalculoV">
+        tools:context=".CalculoA">
 
         <LinearLayout
-            android:id="@+id/volEsfera"
+            android:id="@+id/arCuadrado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/volumen_esfera"
+                android:text="@string/area_cuadrado"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/txtRadioEsfera"
+                android:id="@+id/txtLadoCuadrado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:ems="10"
-                android:hint="@string/ve_placeholder"
+                android:enabled="true"
+                android:hint="@string/ac_placeholder"
                 android:inputType="numberDecimal" />
 
             <LinearLayout
@@ -37,32 +39,31 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/calcular" />
 
                 <Button
-                    android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/borrar" />
             </LinearLayout>
+
         </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/volCilindro"
+        android:id="@+id/arRectangulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/volumen_cilindro"
+            android:text="@string/area_rectangulo"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -73,37 +74,39 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/txtRadioCilindro"
+                android:id="@+id/txtBaseRectangulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="@string/vc_placeholder1"
+                android:enabled="true"
+                android:hint="@string/ar_placeholder1"
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/txtAlturaCilindro"
+                android:id="@+id/txtAlturaRectangulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="@string/vc_placeholder2"
+                android:enabled="true"
+                android:hint="@string/ar_placeholder2"
                 android:inputType="numberDecimal" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/calcular" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -112,16 +115,16 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/volCono"
+        android:id="@+id/arTriangulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/volumen_cono"
+            android:text="@string/area_triangulo"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -132,17 +135,17 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/txtRadioCono"
+                android:id="@+id/txtBaseTriangulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="@string/vc_placeholder1"
+                android:hint="@string/ar_placeholder1"
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/txtAlturaCono"
+                android:id="@+id/txtAlturaTriangulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -157,42 +160,43 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/calcular" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/borrar" />
         </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/volCubo"
+        android:id="@+id/arCirculo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/volumen_cubo"
+            android:text="@string/area_circulo"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtAristaCubo"
+            android:id="@+id/txtRadioCirculo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/vcu_placeholder"
+            android:hint="@string/aci_placeholder"
             android:inputType="numberDecimal" />
 
         <LinearLayout
@@ -201,14 +205,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/calcular" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
