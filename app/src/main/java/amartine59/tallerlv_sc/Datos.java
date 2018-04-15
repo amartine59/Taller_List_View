@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Datos {
 
-    private static ArrayList<String> operaciones = new ArrayList<>();
+    private static ArrayList<Operacion> operacionesR = new ArrayList<>();
 
-    public static void guardar(String p){
-        operaciones.add(p);
+    public static void guardar(Operacion p){
+        operacionesR.add(p);
     }
 
-    public static ArrayList<String>obtener(){return operaciones;}
+    public static ArrayList<Operacion>obtener(){return operacionesR;}
 
 }
