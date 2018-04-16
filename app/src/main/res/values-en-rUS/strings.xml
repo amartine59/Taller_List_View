@@ -19,7 +19,6 @@
     <string name="resultado">Result</string>
     <string name="calcular">Solve</string>
     <string name="borrar">Clear</string>
-    <string name="area_cuadrado">Square Area</string>
     <string name="area_rectangulo">Rectangle Area</string>
     <string name="area_triangulo">Triangle Area</string>
     <string name="area_circulo">Circle Area</string>
@@ -41,4 +40,6 @@
     <string name="altura">Height</string>
     <string name="lado">Side</string>
     <string name="arista">Edge</string>
+    <string name="area_cuadrado">Squeare Area</string>
+    <string name="radio">Radius</string>
 </resources>

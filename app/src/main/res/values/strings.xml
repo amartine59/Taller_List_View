@@ -57,4 +57,5 @@
     <string name="altura">Altura</string>
     <string name="lado">Lado</string>
     <string name="arista">Arista</string>
+    <string name="radio">Radio</string>
 </resources>
