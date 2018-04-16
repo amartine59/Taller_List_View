@@ -38,6 +38,11 @@ public class CalculoA extends AppCompatActivity {
         Intent in_operacion = getIntent();
         String operacion_a_realizar = in_operacion.getStringExtra("Calculo_A_Realizar");
 
+        area_cuadrado.setVisibility(LinearLayout.GONE);
+        area_rectangulo.setVisibility(LinearLayout.GONE);
+        area_triangulo.setVisibility(LinearLayout.GONE);
+        area_circulo.setVisibility(LinearLayout.GONE);
+
 
 
     }
@@ -57,7 +62,15 @@ public class CalculoA extends AppCompatActivity {
     }
     public boolean validar(EditText valor_ingresado){
         if (valor_ingresado.getText().toString().trim().isEmpty()){
-
+            valor_ingresado.requestFocus();
+            valor_ingresado.setError(getResources().getString(R.string.error_valor_vacio));
+            return false;
         }
+        if (Double.parseDouble(valor_ingresado.getText().toString())<=0){
+            valor_ingresado.requestFocus();
+            valor_ingresado.setError(getResources().getString(R.string.error_valor_menor_igual_cero));
+            return false;
+        }
+        return true;
     }
 }

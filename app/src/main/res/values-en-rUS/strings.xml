@@ -37,4 +37,8 @@
     <string name="vcu_placeholder">Type the size of one edge</string>
     <string name="error_valor_vacio">You must type a value</string>
     <string name="error_valor_menor_igual_cero">The value must be greater than zero</string>
+    <string name="base">Base</string>
+    <string name="altura">Height</string>
+    <string name="lado">Side</string>
+    <string name="arista">Edge</string>
 </resources>

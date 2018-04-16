@@ -53,4 +53,8 @@
     <string name="vcu_placeholder">Ingrese valor de la arista</string>
     <string name="error_valor_vacio">Debe ingresar un valor</string>
     <string name="error_valor_menor_igual_cero">Debe ingresar un valor mayor que cero</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="lado">Lado</string>
+    <string name="arista">Arista</string>
 </resources>
