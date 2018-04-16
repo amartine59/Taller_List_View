@@ -28,18 +28,22 @@ public class Area extends AppCompatActivity {
                 switch (i){
                     case 0:
                         in_area = new Intent(Area.this,CalculoA.class);
+                        in_area.putExtra("Calculo_A_Realizar","cuadrado");
                         startActivity(in_area);
                         break;
                     case 1:
                         in_area = new Intent(Area.this,CalculoA.class);
+                        in_area.putExtra("Calculo_A_Realizar","rectangulo");
                         startActivity(in_area);
                         break;
                     case 2:
                         in_area = new Intent(Area.this,CalculoA.class);
+                        in_area.putExtra("Calculo_A_Realizar","triangulo");
                         startActivity(in_area);
                         break;
                     case 3:
                         in_area = new Intent(Area.this,CalculoA.class);
+                        in_area.putExtra("Calculo_A_Realizar","circulo");
                         startActivity(in_area);
                         break;
 

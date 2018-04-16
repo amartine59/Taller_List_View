@@ -28,18 +28,22 @@ public class Volumen extends AppCompatActivity {
                 switch (i){
                     case 0:
                         in_volumen = new Intent(Volumen.this,CalculoV.class);
+                        in_volumen.putExtra("Calculo_A_Realizar","esfera");
                         startActivity(in_volumen);
                         break;
                     case 1:
                         in_volumen = new Intent(Volumen.this,CalculoV.class);
+                        in_volumen.putExtra("Calculo_A_Realizar","cilindro");
                         startActivity(in_volumen);
                         break;
                     case 2:
                         in_volumen = new Intent(Volumen.this,CalculoV.class);
+                        in_volumen.putExtra("Calculo_A_Realizar","cono");
                         startActivity(in_volumen);
                         break;
                     case 3:
                         in_volumen = new Intent(Volumen.this,CalculoV.class);
+                        in_volumen.putExtra("Calculo_A_Realizar","cubo");
                         startActivity(in_volumen);
                         break;
                 }

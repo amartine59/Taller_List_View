@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TallerLV_SC</string>
+    <string name="opciones">Options</string>
+    <string name="areas">Areas</string>
+    <string name="volumenes">Volumes</string>
+    <string name="historial">Operations History</string>
+    <string name="cuadrado">Square</string>
+    <string name="rectangulo">Rectangle</string>
+    <string name="triangulo">Triangle</string>
+    <string name="circulo">Circle</string>
+    <string name="esfera">Sphere</string>
+    <string name="cilindro">Cylinder</string>
+    <string name="cono">Cone</string>
+    <string name="cubo">Cube</string>
+    <string name="operacion">Operation</string>
+    <string name="numero">ID</string>
+    <string name="datos">Data</string>
+    <string name="resultado">Result</string>
+    <string name="calcular">Solve</string>
+    <string name="borrar">Clear</string>
+    <string name="area_cuadrado">Square Area</string>
+    <string name="area_rectangulo">Rectangle Area</string>
+    <string name="area_triangulo">Triangle Area</string>
+    <string name="area_circulo">Circle Area</string>
+    <string name="volumen_esfera">Sphere Volume</string>
+    <string name="volumen_cilindro">Cylinder Volume</string>
+    <string name="volumen_cono">Cone Volume</string>
+    <string name="volumen_cubo">Bucket Volume</string>
+    <string name="ac_placeholder">Type size of side</string>
+    <string name="ar_placeholder1">Type the base</string>
+    <string name="ar_placeholder2">Type the height</string>
+    <string name="aci_placeholder">Type the radius</string>
+    <string name="ve_placeholder">Type the radius</string>
+    <string name="vc_placeholder1">Type the radius</string>
+    <string name="vc_placeholder2">Type the height</string>
+    <string name="vcu_placeholder">Type the size of one edge</string>
+    <string name="error_valor_vacio">You must type a value</string>
+    <string name="error_valor_menor_igual_cero">The value must be greater than zero</string>
+</resources>

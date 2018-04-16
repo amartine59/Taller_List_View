@@ -38,7 +38,7 @@ public class Operacion {
         this.resultado_op = resultado_op;
     }
 
-   public void guardarOp(View v){
+   public void guardarOp(){
         Datos.guardar(this);
    }
 }
