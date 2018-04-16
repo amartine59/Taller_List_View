@@ -18,7 +18,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/area_cuad"
+                android:text="@string/area_cuadrado"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -42,12 +42,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="calcular_area_cuadrado"
                     android:text="@string/calcular" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="borrar"
                     android:text="@string/borrar" />
             </LinearLayout>
 
@@ -103,6 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="calcular_area_rectangulo"
                 android:text="@string/calcular" />
 
             <Button
@@ -110,6 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="borrar"
                 android:text="@string/borrar" />
         </LinearLayout>
     </LinearLayout>
@@ -141,6 +145,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="true"
                 android:hint="@string/ar_placeholder1"
                 android:inputType="numberDecimal" />
 
@@ -150,6 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="true"
                 android:hint="@string/ar_placeholder2"
                 android:inputType="numberDecimal" />
         </LinearLayout>
@@ -164,6 +170,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="calcular_area_triangulo"
                 android:text="@string/calcular" />
 
             <Button
@@ -171,6 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="borrar"
                 android:text="@string/borrar" />
         </LinearLayout>
 
@@ -196,6 +204,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:enabled="true"
             android:hint="@string/aci_placeholder"
             android:inputType="numberDecimal" />
 
@@ -209,6 +218,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="calcular_area_circulo"
                 android:text="@string/calcular" />
 
             <Button
@@ -216,6 +226,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="borrar"
                 android:text="@string/borrar" />
         </LinearLayout>
     </LinearLayout>

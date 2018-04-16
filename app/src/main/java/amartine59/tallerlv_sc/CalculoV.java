@@ -77,6 +77,10 @@ public class CalculoV extends AppCompatActivity {
         altura_cono.setText("");
         arista_cubo.setText("");
     }
+    public void borrar(View v){
+        limpiar();
+    }
+
     public boolean validar(EditText valor_ingresado){
         if (valor_ingresado.getText().toString().trim().isEmpty()){
             valor_ingresado.requestFocus();
