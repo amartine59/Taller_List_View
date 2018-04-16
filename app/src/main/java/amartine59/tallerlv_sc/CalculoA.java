@@ -134,7 +134,7 @@ public class CalculoA extends AppCompatActivity {
     public void calcular_area_circulo(View v){
         if (validar(radio_circulo)){
             Double valor_radio = Double.parseDouble(lado_cuadrado.getText().toString());
-            Double resultado = valor_radio * (3.141592653589793*3.141592653589793);
+            Double resultado = 3.141592653589793*(valor_radio*valor_radio);
             String radio = getResources().getString(R.string.radio)+"= "+valor_radio;
             String [] datos_operacion = {radio};
 
