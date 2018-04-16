@@ -29,7 +29,6 @@ public class MenuPrincipal extends AppCompatActivity {
                     case 0:
                         in_principal= new Intent(MenuPrincipal.this,Area.class);
                         startActivity(in_principal);
-
                         break;
                     case 1:
                         in_principal= new Intent(MenuPrincipal.this,Volumen.class);

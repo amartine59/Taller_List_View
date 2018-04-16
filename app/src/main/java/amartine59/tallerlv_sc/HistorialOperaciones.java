@@ -13,14 +13,6 @@ public class HistorialOperaciones extends AppCompatActivity {
     private TableLayout tabla_operaciones;
     private ArrayList<Operacion>hst_operaciones;
 
-    public String DatoStr(ArrayList<Operacion> d,int posicion){
-        String datoOperacion = "";
-        for (int j = 0; j < d.get(posicion).getDatos_op().length; j++) {
-            datoOperacion += d.get(posicion).getDatos_op() + "\n";
-
-        }
-        return datoOperacion;
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +32,7 @@ public class HistorialOperaciones extends AppCompatActivity {
 
             iterador.setText(""+(i + 1));
             operacion.setText(hst_operaciones.get(i).getOperacion_realizada());
-            datos.setText(DatoStr(hst_operaciones,i));
+            datos.setText(hst_operaciones.get(i).getDatos_op());
             resultado.setText(hst_operaciones.get(i).getResultado_op());
 
             fila.addView(iterador);
