@@ -60,7 +60,7 @@ public class CalculoA extends AppCompatActivity {
         }
 
     }
-    public void almacenarOperacion(String operacion,String []datosOperacion,String resultado){
+    public void almacenarOperacion(String operacion,String datosOperacion,String resultado){
         Operacion op_actual = new Operacion(operacion,datosOperacion,resultado);
         op_actual.guardarOp();
 
@@ -76,7 +76,12 @@ public class CalculoA extends AppCompatActivity {
     }
 
     public void borrar(View v){
-        limpiar();
+        lado_cuadrado.setText("");
+        base_rectangulo.setText("");
+        altura_rectangulo.setText("");
+        base_triangulo.setText("");
+        altura_triangulo.setText("");
+        radio_circulo.setText("");
     }
 
     public boolean validar(EditText valor_ingresado){
@@ -98,11 +103,9 @@ public class CalculoA extends AppCompatActivity {
             Double valor_lado = Double.parseDouble(lado_cuadrado.getText().toString());
             Double resultado = valor_lado * valor_lado;
             String lado = getResources().getString(R.string.lado)+"= "+valor_lado;
-            String [] datos_operacion = {lado};
+            almacenarOperacion(getResources().getString(R.string.area_cuadrado),lado,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
 
-            almacenarOperacion(getResources().getString(R.string.area_cuadrado),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
         }
     }
 
@@ -113,11 +116,9 @@ public class CalculoA extends AppCompatActivity {
             Double resultado = valor_base * valor_altura;
             String base_altura = getResources().getString(R.string.base)+"= "+valor_base+"\n"+
                                  getResources().getString(R.string.altura)+"= "+valor_altura;
-            String [] datos_operacion = {base_altura};
+            almacenarOperacion(getResources().getString(R.string.area_rectangulo),base_altura,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
 
-            almacenarOperacion(getResources().getString(R.string.area_rectangulo),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
         }
     }
 
@@ -128,24 +129,20 @@ public class CalculoA extends AppCompatActivity {
             Double resultado = (valor_base * valor_altura)/2;
             String base_altura = getResources().getString(R.string.base)+"= "+valor_base+"\n"+
                     getResources().getString(R.string.altura)+"= "+valor_altura;
-            String [] datos_operacion = {base_altura};
+            almacenarOperacion(getResources().getString(R.string.area_triangulo),base_altura,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
 
-            almacenarOperacion(getResources().getString(R.string.area_triangulo),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
         }
     }
 
     public void calcular_area_circulo(View v){
         if (validar(radio_circulo)){
-            Double valor_radio = Double.parseDouble(lado_cuadrado.getText().toString());
+            Double valor_radio = Double.parseDouble(radio_circulo.getText().toString());
             Double resultado = 3.141592653589793*(valor_radio*valor_radio);
             String radio = getResources().getString(R.string.radio)+"= "+valor_radio;
-            String [] datos_operacion = {radio};
+            almacenarOperacion(getResources().getString(R.string.area_circulo),radio,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
 
-            almacenarOperacion(getResources().getString(R.string.area_circulo),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
         }
     }
 }

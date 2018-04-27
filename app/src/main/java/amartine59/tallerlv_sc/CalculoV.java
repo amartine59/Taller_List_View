@@ -32,7 +32,7 @@ public class CalculoV extends AppCompatActivity {
         radio_esfera = findViewById(R.id.txtRadioEsfera);
 
         radio_cilindro = findViewById(R.id.txtRadioCilindro);
-        altura_cilindro = findViewById(R.id.txtRadioCilindro);
+        altura_cilindro = findViewById(R.id.txtAlturaCilindro);
 
         radio_cono = findViewById(R.id.txtRadioCono);
         altura_cono = findViewById(R.id.txtAlturaCono);
@@ -63,7 +63,7 @@ public class CalculoV extends AppCompatActivity {
         }
 
     }
-    public void almacenarOperacion(String operacion,String []datosOperacion,String resultado){
+    public void almacenarOperacion(String operacion,String datosOperacion,String resultado){
         Operacion op_actual = new Operacion(operacion,datosOperacion,resultado);
         op_actual.guardarOp();
 
@@ -78,7 +78,13 @@ public class CalculoV extends AppCompatActivity {
         arista_cubo.setText("");
     }
     public void borrar(View v){
-        limpiar();
+
+        radio_esfera.setText("");
+        radio_cilindro.setText("");
+        altura_cilindro.setText("");
+        radio_cono.setText("");
+        altura_cono.setText("");
+        arista_cubo.setText("");
     }
 
     public boolean validar(EditText valor_ingresado){
@@ -100,11 +106,9 @@ public class CalculoV extends AppCompatActivity {
             Double valor_radio = Double.parseDouble(radio_esfera.getText().toString());
             Double resultado = (4*(3.141592653589793*(valor_radio * valor_radio * valor_radio)))/3;
             String radio = getResources().getString(R.string.radio)+"= "+valor_radio;
-            String [] datos_operacion = {radio};
-
-            almacenarOperacion(getResources().getString(R.string.volumen_esfera),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
+            almacenarOperacion(getResources().getString(R.string.volumen_esfera),radio,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
+            //limpiar();
         }
     }
 
@@ -115,11 +119,9 @@ public class CalculoV extends AppCompatActivity {
             Double resultado = 3.141592653589793*(valor_radio * valor_radio)*valor_altura;
             String radio_altura = getResources().getString(R.string.radio)+"= "+valor_radio+"\n"+
                     getResources().getString(R.string.altura)+"= "+valor_altura;
-            String [] datos_operacion = {radio_altura};
-
-            almacenarOperacion(getResources().getString(R.string.volumen_cilindro),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
+            almacenarOperacion(getResources().getString(R.string.volumen_cilindro),radio_altura,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
+            //limpiar();
         }
     }
 
@@ -130,11 +132,9 @@ public class CalculoV extends AppCompatActivity {
             Double resultado = (3.141592653589793*(valor_radio * valor_radio)*valor_altura)/3;
             String radio_altura = getResources().getString(R.string.radio)+"= "+valor_radio+"\n"+
                     getResources().getString(R.string.altura)+"= "+valor_altura;
-            String [] datos_operacion = {radio_altura};
+            almacenarOperacion(getResources().getString(R.string.volumen_cono),radio_altura,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
 
-            almacenarOperacion(getResources().getString(R.string.volumen_cono),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
         }
     }
 
@@ -143,11 +143,9 @@ public class CalculoV extends AppCompatActivity {
             Double valor_arista = Double.parseDouble(arista_cubo.getText().toString());
             Double resultado = valor_arista * valor_arista * valor_arista ;
             String arista = getResources().getString(R.string.arista)+"= "+valor_arista;
-            String [] datos_operacion = {arista};
+            almacenarOperacion(getResources().getString(R.string.volumen_cubo),arista,resultado+"");
+            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT).show();
 
-            almacenarOperacion(getResources().getString(R.string.volumen_cubo),datos_operacion,resultado+"");
-            Toast.makeText(this,getResources().getString(R.string.resultado)+"\n"+(resultado+""),Toast.LENGTH_SHORT);
-            limpiar();
         }
     }
 
